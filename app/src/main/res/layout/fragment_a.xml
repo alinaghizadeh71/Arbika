@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Kafeshahrpackage.Kafeshahr.FragmentA"
+   >
+
+       <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+           android:layout_marginTop="50dp"
+           android:padding="5dp">
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+
+
+
+                       android:id="@+id/li2"
+                       >
+
+                     <!-- Top Sliding Banners -->
+
+                     <RelativeLayout
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content" >
+
+                         <Button
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="انتخاب فیلم"
+
+                             android:layout_marginTop="10dp"
+                             android:id="@+id/selectbtnfilm"
+                             android:layout_alignParentRight="true"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="25dp"
+                             android:id="@+id/resfilm"
+                             android:layout_toLeftOf="@+id/selectbtn"
+
+                 android:textColor="@color/black"
+                             android:text="انتخاب فیلم ضروری نیست"/>
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="انتخاب عکس"
+                     android:layout_below="@id/selectbtnfilm"
+
+                     android:id="@+id/selectbtn"
+                     android:layout_alignParentRight="true"/>
+                       <!--<TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="25dp"
+                             android:id="@+id/res"
+                           android:layout_toLeftOf="@+id/selectbtn"
+                           android:layout_below="@id/resfilm"
+
+                           android:text="انتخاب تصویر ضروری نیست"/>-->
+                 <!--<ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/res"
+                     android:layout_above="@+id/upload"
+                     android:id="@+id/grid"/>-->
+                         <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_below="@id/selectbtn"
+
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:background="#eeeeee"
+                             android:horizontalSpacing="4dp"
+                             android:listSelector="@android:color/transparent"
+                             android:numColumns="3"
+                             android:verticalSpacing="4dp"
+                             android:layout_marginTop="10dp"
+                             android:id="@+id/grid"/>
+
+
+                <!--       <Button
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/upload"
+                           android:text="ارسال خبر"
+                           android:layout_alignParentBottom="true"
+                           android:descendantFocusability="blocksDescendants"
+                           android:focusable="true"/>-->
+                     </RelativeLayout>
+
+                   </LinearLayout>
+
+                 </LinearLayout>
+
+</FrameLayout>

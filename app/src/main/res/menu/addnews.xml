@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/senddata"
+        android:orderInCategory="0"
+        android:title="ارسال خبر"
+        app:showAsAction="always"
+        android:padding="5dp"
+
+      />
+    <item
+        android:id="@+id/send"
+        android:orderInCategory="0"
+        android:title="ارسال خبر"
+        app:showAsAction="always"
+        android:padding="5dp"
+        android:icon="@drawable/ic_check"
+        />
+</menu>

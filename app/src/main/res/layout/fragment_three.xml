@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.Kafeshahrpackage.Kafeshahr.FragmentOne"
+    android:orientation="vertical"
+    android:background="#E4E6E3">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E4E6E3"
+            android:layout_alignParentTop="true"
+android:layout_above="@+id/pdloadmore"
+android:id="@+id/framemain"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pd"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/activity_main_swipe_refresh_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="vertical"
+                    />
+               <!-- <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    >-->
+
+             <!--   </LinearLayout>-->
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <!-- tools:listitem="@layout/item_list"-->
+
+
+        </FrameLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pdloadmore"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|bottom"
+
+        />
+</RelativeLayout>

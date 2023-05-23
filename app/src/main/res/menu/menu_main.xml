@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ir.bkhezry.materialdrawerrtl.page1">
+
+
+
+
+    <!--<item
+        android:id="@+id/filter"
+        android:orderInCategory="200"
+        android:title="info"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_filter"
+        android:padding="5dp"
+        />-->
+
+    <item
+        android:id="@+id/refresh"
+        android:padding="5dp"
+        android:title="info"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_refresh"
+        />
+        <item
+            android:id="@+id/bookmark"
+            android:padding="5dp"
+            android:title="info"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_bookmark"
+           />
+    <!--@android:drawable/ic_dialog_info-->
+
+    <item
+
+        android:id="@+id/search"
+        android:padding="5dp"
+        android:title="info"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search"/>
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:padding="5dp"
+        android:title="more"
+        app:showAsAction="always"
+        android:icon="@drawable/more"/>
+</menu>
+
+
+

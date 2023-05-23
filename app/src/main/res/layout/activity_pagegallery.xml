@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#000"
+    tools:context="com.example.Kafeshahrpackage.Kafeshahr.MainActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/li1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+      android:paddingRight="5dp"
+android:layout_marginRight="5dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/cancel"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+           android:layout_marginTop="10dp"
+            android:id="@+id/close"
+            android:layout_alignParentLeft="true"
+           />
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/close"
+
+            android:paddingTop="22dp"
+
+            android:gravity="right"
+
+            android:layout_gravity="right"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/numlb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عکس"
+            android:fontFamily="sans-serif"
+            android:paddingTop="22dp"
+            android:layout_toRightOf="@+id/num"
+            android:gravity="right"
+
+            android:layout_gravity="right"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:layout_marginRight="20dp"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" بیشتر ببیننده داشت."
+            android:fontFamily="sans-serif"
+           android:paddingTop="22dp"
+            android:layout_toRightOf="@+id/numlb"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+
+            android:layout_gravity="right"
+            android:textSize="14dp"
+            android:textColor="#fff"
+
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:background="#000"
+        android:layout_below="@+id/li1"
+        android:layout_above="@+id/li3"
+        android:id="@+id/li2"
+        >
+
+        <!-- Top Sliding Banners -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+      <!--      <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="true"
+
+                app:snap="false"
+                app:fillColor="@color/material_drawer_background"
+                app:pageColor="@color/colorPrimaryDark"
+              />-->
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+android:id="@+id/li3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#000"
+        android:layout_gravity="bottom"
+android:layout_alignParentBottom="true"
+        >
+        <ImageButton
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_download"
+            android:padding="5dp"
+            android:background="@null"
+            android:gravity="center|left"
+            />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:src="@drawable/ic_share"
+            android:background="@null"
+            android:layout_gravity="right"
+          />
+    </LinearLayout>
+    </RelativeLayout>

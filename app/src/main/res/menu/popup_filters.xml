@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_horizontal"
+        android:layoutDirection="rtl"
+        android:layout_gravity="start"
+        >
+        <group
+            android:checkableBehavior="single"
+            android:layout_gravity="left"
+            >
+            <item android:id="@+id/action3_sub1"
+                android:title="@string/action3_sub1"
+                android:orderInCategory="100"
+                android:layout_gravity="right"
+                />
+
+            <item android:id="@+id/action3_sub2"
+                android:title="@string/action3_sub2"
+                android:orderInCategory="100"
+                />
+
+            <item android:id="@+id/action3_sub3"
+                android:title="@string/action3_sub3"
+                android:orderInCategory="100"
+               />
+        </group>
+    </menu>

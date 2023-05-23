@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+android:textStyle="bold|italic"
+        android:layout_marginBottom="5dp"
+        android:textDirection="rtl"
+
+        android:gravity="fill_horizontal"/>
+
+   <!-- <TextView
+        android:id="@+id/description_text"
+        android:lineSpacingExtra="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+
+        android:maxLines="7"
+        android:textDirection="rtl"
+android:layout_centerInParent="true"
+        android:gravity="fill_horizontal|center"
+        android:layout_gravity="center_vertical|right"
+        android:layout_below="@+id/txttitle"/>-->
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/description_text"
+        android:lineSpacingExtra="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+
+        android:maxLines="7"
+        android:textDirection="rtl"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/txttitle"/>
+    <Button
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/description_text"
+android:text="مطالعه بیشتر"
+        android:clickable="true"
+        android:gravity="center"
+
+        android:drawableLeft="@drawable/arrowdown"
+        android:paddingLeft="130dp"
+        android:paddingRight="110dp"
+
+      />
+
+
+    <Button
+        android:id="@+id/hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/description_text"
+        android:text="بستن"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:drawableLeft="@drawable/uparrow"
+        android:paddingLeft="140dp"
+        android:paddingRight="120dp"
+
+       />
+
+</RelativeLayout>
+

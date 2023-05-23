@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D50100</color>
+    <color name="colorPrimaryDark">#AC0000</color>
+    <color name="colorAccent">#D50100</color>
+    <color name="colorAccent2">#d9d8d8</color>
+    <color name="colorAccent3">#e68e8d</color>
+    <color name="textColorPrimary">#fff</color>
+    3F51B5
+    <color name="backfooter">#e1e1e1</color>
+    <color name="backshare">#3F51B5</color>
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+    #fe1243
+    #fe1243
+    #FF4081
+</resources>

@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Kafeshahrpackage.Kafeshahr.FragmentB"
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="عنوان خبر"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:layout_below="@+id/name"
+        android:textDirection="rtl"/>
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#000"
+        android:hint="متن خبر"
+        android:gravity="top"
+        android:layout_below="@id/title"
+        android:textSize="15sp"
+        android:textDirection="rtl"/>
+</LinearLayout>
+</FrameLayout>

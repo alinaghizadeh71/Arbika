@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+<!--
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Hello"/>-->
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_search"
+        android:padding="5dp"/>
+<!--    android:layout_alignParentLeft="true"-->
+    <ImageButton
+        android:padding="5dp"
+        android:id="@+id/fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_bookmark"
+        android:layout_toRightOf="@+id/search"/>
+
+    <ImageButton
+        android:padding="5dp"
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:background="@null"
+        android:layout_toRightOf="@+id/fav"
+        app:srcCompat="@drawable/ic_share" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:src="@drawable/menu"
+        android:clickable="true"
+        />
+    <TextView
+        android:id="@+id/action_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:text="کافه شهر"
+        android:textColor="#fff"
+        android:layout_marginRight="8dp"
+        android:textSize="20sp"
+        android:clickable="true"
+       />
+
+</RelativeLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/menu"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_gravity="right"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Menu"
+        android:layout_gravity="right"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/search"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_gravity="left"
+        />
+
+
+
+
+</LinearLayout>-->

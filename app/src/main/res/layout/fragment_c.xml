@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Kafeshahrpackage.Kafeshahr.FragmentC"
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:padding="5dp">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="نام [اختیاری]"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:textDirection="rtl"
+        android:layout_alignParentTop="true"/>
+   <!-- <EditText
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="نام خانوادگی[اختیاری]"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:textDirection="rtl"
+        android:layout_alignParentTop="true"/>-->
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="شماره تماس [اختیاری]"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:textDirection="rtl"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="پست الکترونیک[اختیاری]"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:textDirection="rtl"
+        android:layout_alignParentTop="true"/>
+</LinearLayout>
+</FrameLayout>

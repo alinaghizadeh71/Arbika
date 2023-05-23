@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:background="@color/textColorPrimary"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp">
+<TextView
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="انتخاب گروه خبری برای ذخیره سازی آفلاین"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="10dp"/>
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pd"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="50dp"
+        />
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nest"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v7.widget.RecyclerView
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:nestedScrollingEnabled="false"
+        />
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/numnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تعداد خبر برای ذخیره آفلاین را انتخاب کنید:"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:layout_margin="5dp"
+        android:textSize="14sp"/>
+    <SeekBar
+        android:id="@+id/sbBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+
+        android:max="100"
+        android:paddingTop="20dp" />
+    <TextView
+        android:id="@+id/numnews1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/send"
+        android:background="@color/transparent"
+        android:textColor="@color/accent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="ثبت"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>

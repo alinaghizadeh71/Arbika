@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:paddingRight="50dp"
+    android:background="@color/backfooter">
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:background="@color/backfooter" >
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/country_photo"
+android:layout_gravity="right"
+            android:layoutDirection="rtl"
+android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/usercom"
+            android:scaleType="fitCenter"
+android:layout_alignParentRight="true"
+
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="repeat"
+            android:layout_below="@+id/image"
+            app:riv_corner_radius_bottom_left="100dp"
+            app:riv_corner_radius_bottom_right="100dp"
+            app:riv_corner_radius_top_left="100dp"
+            app:riv_corner_radius_top_right="100dp" />
+      <!--  app:riv_border_width="2dip"
+        app:riv_border_color="#333333"-->
+        <!--android:layout_height="0dip"
+        android:layout_weight="3.2"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:background="@color/textColorPrimary"
+            android:layout_toLeftOf="@+id/country_photo"
+            android:layout_marginRight="5dp">
+            <!-- <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center_horizontal">-->
+            <LinearLayout
+                android:id="@+id/li1"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_reply"
+                    android:id="@+id/rep"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10/2/1398"
+                    android:textSize="12dp"
+                    android:padding="5dp"
+                    android:id="@+id/date"
+                    android:gravity="center|left"
+                    android:textColor="#919191"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:39"
+                    android:padding="5dp"
+                    android:gravity="center|left"
+                    android:textSize="12dp"
+                    android:textColor="#919191"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="احمد بادپی"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:layout_gravity="right"
+                    android:textSize="12dp"
+                    android:textColor="#919191"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/line1"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/li2"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="@string/msn"
+                    android:scaleType="centerCrop"
+                    android:textDirection="rtl"
+                    android:padding="5dp"
+                    android:textSize="13dp"
+
+                    android:textColor="#919191"
+                    android:id="@+id/txtcontent" />
+
+
+            </LinearLayout>
+
+            <!--</FrameLayout>-->
+            <View
+                android:id="@+id/line2"
+                android:layout_above="@+id/li3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent2"
+                android:layout_marginBottom="3dp"/>
+            <LinearLayout
+                android:id="@+id/li3"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_padding"
+                    app:srcCompat="@drawable/ic_like"
+                    android:background="@null"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtlike"
+                    android:textSize="10sp"
+                   />
+                <ImageButton
+                    android:id="@+id/dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_padding"
+                    app:srcCompat="@drawable/ic_dislike"
+                    android:layout_marginLeft="30dp"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtdislike"
+
+                    android:textSize="10sp"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:paddingTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txterror"
+                    android:textSize="10sp"
+                    android:text="گزارش تخلف"
+                    />
+                <ImageButton
+                    android:id="@+id/smsImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_padding"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_error"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+      <!--  android:layout_height="0dip"
+        android:layout_weight="0.8"-->
+
+    </RelativeLayout>
+</FrameLayout>
+<!--
+</android.support.v7.widget.CardView>-->
